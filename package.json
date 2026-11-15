@@ -1,0 +1,33 @@
+{
+  "name": "geoanalog-matchmaker",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Planetary analog intelligence platform for mission planning and scientific research",
+  "scripts": {
+    "start": "vite --open --host --port 5173",
+    "dev": "vite --open --host --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --open --host --port 5173",
+    "test": "node tests/providers.test.js && node tests/planetaryMaps.test.js && node tests/dossierEngine.test.js && node tests/mcdaEngine.test.js && node tests/hadeEngine.test.js && node tests/explainableMl.test.js && node tests/portfolioEngine.test.js && node tests/knowledgeGraph.test.js && node tests/demEngine.test.js && node tests/terrainPanorama.test.js && node tests/terrainIntegration.test.js && node tests/materialPaletteEngine.test.js",
+    "lint": "eslint src --ext .js"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.4",
+    "maplibre-gl": "^5.5.0",
+    "three": "^0.167.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "vite": "^5.4.0",
+    "vite-plugin-singlefile": "^2.3.4"
+  },
+  "keywords": [
+    "planetary",
+    "analog",
+    "nasa",
+    "geospatial",
+    "mission-planning"
+  ],
+  "license": "MIT"
+}

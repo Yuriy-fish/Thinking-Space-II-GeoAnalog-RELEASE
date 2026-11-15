@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GeoAnalog Matchmaker — Integrated planetary analog intelligence platform for mission planning and scientific research. Discover Earth analogs for Moon and Mars targets." />
+    <meta name="theme-color" content="#0A111B" />
+    <meta name="color-scheme" content="dark light" />
+    <meta property="og:title" content="GeoAnalog Matchmaker — Planetary Analog Intelligence" />
+    <meta property="og:description" content="Find Earth's closest analogs to the Moon and Mars using NASA-first scientific datasets, MCDA scoring, and high-fidelity planetary geospatial visualization." />
+    <meta property="og:type" content="website" />
+    <title>GeoAnalog Matchmaker — Planetary Analog Intelligence</title>
+    
+    <!-- Preconnect Google Fonts for Space Grotesk, Inter, and IBM Plex Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    
+    <script>
+      // Seamless offline redirect if opened directly from root as a local file (file://)
+      (function() {
+        if (window.location.protocol === 'file:') {
+          var p = window.location.pathname.replace(/\\/g, '/');
+          if (!p.endsWith('/dist/index.html') && !p.endsWith('/Offline_App.html')) {
+            window.location.replace('./dist/index.html' + (window.location.hash || '#'));
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app" role="main" aria-live="polite" aria-label="GeoAnalog Matchmaker application">
+      <noscript>
+        <div style="padding:2rem;text-align:center;font-family:system-ui,sans-serif;color:#ccc;background:#0A111B;">
+          <h1>GeoAnalog Matchmaker</h1>
+          <p>JavaScript is required to run this application.</p>
+        </div>
+      </noscript>
+    </div>
+    <div id="modal-root" aria-hidden="true"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
